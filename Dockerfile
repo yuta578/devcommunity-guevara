@@ -12,7 +12,7 @@ RUN npm ci
 #Copiar el resto de los archivos del proyecto
 COPY . .
 
-RUN npm run start
+RUN npm run build
 
 #ETAPA 2: RUN (Imagen final)
 FROM node:20-alpine
